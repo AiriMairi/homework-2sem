@@ -17,11 +17,14 @@ text = '''<!DOCTYPE html>
     </body>
 </html>'''
 div = re.search('<div>', text, True)
-if div:
+div1 = re.search('</div>', text, True)
+if div and div1:
     print('div ok')
 p = re.search('<p>', text, True)
-if p:
+p1 = re.search('</p>', text, True)
+if p and p1:
     print('p ok')
 h1 = re.search('<h1>', text, True)
-if h1:
+h11 = re.search('</h1>', text, True)
+if h1 and h11:
     print('h1 ok')
